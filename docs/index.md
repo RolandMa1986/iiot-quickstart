@@ -1,17 +1,6 @@
-# Welcome to MkDocs
+# IIOT 快速入门教程
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+这是一系列 IIOT 快速入门教程。帮助非自动化专业的软件开发人员了解工控行业相关的术语，技术，设备，以及发展现状。
 
-## Commands
+## 什么 IIOT ？
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
