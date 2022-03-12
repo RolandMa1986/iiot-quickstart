@@ -1,0 +1,445 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://rolandma1986.github.io/iiot-quickstart/opcua/readme/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
+    
+    
+      
+        <title>Readme - IIOT QuickStart</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2d9f7617.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#00bdd6">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="cyan" data-md-color-accent="green">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="IIOT QuickStart" class="md-header__button md-logo" aria-label="IIOT QuickStart" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IIOT QuickStart
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Readme
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/RolandMa1986/iiot-quickstart/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RolandMa1986/iiot-quickstart
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../plc/What-is-plc/" class="md-tabs__link">
+        PLC
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../about/" class="md-tabs__link">
+      About
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="IIOT QuickStart" class="md-nav__button md-logo" aria-label="IIOT QuickStart" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    IIOT QuickStart
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/RolandMa1986/iiot-quickstart/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RolandMa1986/iiot-quickstart
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          PLC
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="PLC" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          PLC
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plc/What-is-plc/" class="md-nav__link">
+        What is plc?
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+<a href="https://github.com/RolandMa1986/iiot-quickstart/edit/main/docs/opcua/readme.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+
+  <h1>Readme</h1>
+
+<p>OPC UA简介
+OPC
+什么是OPC?
+为什么需要OPC？
+OPCUA简介
+什么是OPC UA?
+OPC UA的优势：
+OPC UA规范标准
+OPC UA基础
+OPC UA 软件层
+OPC UA 学习内容</p>
+<p>在了解OPC UA 的之前，我们首先了解一些它的前身OPC 协议。这样更有利于了解OPC UA 的本质和由来。
+OPC
+什么是OPC?
+OPC全称是OLE（Object Linking and Embedding） for Process Control。</p>
+<p>为了便于自动化行业不同厂家的设备和应用程序能相互交换数据，定义了一个统一的接口函数，就是OPC协议规范。有了OPC就可以使用统一的方式去访问不同设备厂商的产品数据。
+简单来说：OPC就是为了用于设备和软件之间交换数据。</p>
+<p>OPC基金会前前后后规定了不同的接口定义，如下：</p>
+<p>• OPC DA (Data Access, exchange of real-time values)
+• OPC A&amp;E (Alarms &amp; Events, exchange of alarms and events)
+• OPC HDA (Historical Data Access, exchange of historical values)
+• OPC XML DA (XML-based exchange of real-time values)</p>
+<p>以上所有的接口定义，我们现在都统称为OPC。OPC是基于WINDOWS COM/DOM接口技术来规定的。</p>
+<p>为什么需要OPC？
+1.工业领域有大量的硬件，硬件与应用软件耦合较大，底层变动对应用影响较大。
+2.硬件设备厂商较多，不同设备之间的通讯及互操作困难。</p>
+<p>工业控制领域用到大量的现场设备，在OPC出现以前，软件开发商需要开发大量的驱动程序来连接这些设备。即使硬件供应商在硬件上做了一些小小改动，应用程序也可能需要重写。同时，由于不同设备甚至同一设备不同单元的驱动程序也有可能不同，软件开发商很难同时对这些设备进行访问以优化操作。</p>
+<p>为了消除硬件平台和自动化软件之间互操作性的障碍，建立了OPC软件互操作性标准，开发OPC的最终目标是在工业控制领域建立一套数据传输规范。</p>
+<p>OPCUA简介
+什么是OPC UA?
+UA全称是unified architecture（统一架构）。
+为了应对标准化和跨平台的趋势，为了更好的推广OPC，OPC基金会近些年在之前OPC成功应用的基础上推出了一个新的OPC标准-OPC UA。OPC UA接口协议包含了之前的 A&amp;E, DA,OPC XML DA or HDA，只使用一个地址空间就能访问之前所有的对象，而且不受WINDOWS平台限制，因为它是从传输层以上来定义的，导致了灵活性和安全性比之前的OPC都提升了。</p>
+<p>OPC UA的优势：
+一、功能方面，OPC UA不仅支持传统OPC的所有功能，更支持更多新的功能：1. 网络发现：自动查询本PC机中与当前网络中可用的OPC Server。2. 地址空间优化：所有的数据都可以分级结构定义，使得OPC Client不仅能够读取并利用简单数据，也能访问复杂的结构体。3. 互访认证：所有的读写数据/消息行为，都必须有访问许可。4. 数据订阅：针对OPCClient不同的配置与标准，提供数据/消息的监控，以及数值变化时的变化报告。5. 方案(Methods)功能：OPC UA中定义了通过在OPCServer中定义方案（Methods），来让OPC client执行特定的程序。
+二、平台支持方面，由于不再基于COM/DCOM技术，OPC UA标准提供的更多的可支持的硬件或软件平台。硬件平台诸如传统的PC机、基于云的服务器、PLC、ARM等其他微处理器；而软件平台可支持微软的Windows、苹果公司的OSX、安卓，以及其他的基于Linux的分布式操作系统。
+三、安全性方面，最大的变化是OPC UA可以通过任何单一端口（经管理员开放后）进行通信，这使得OPC通信不再会由于防火墙受到大量的限制。</p>
+<p>核心的区别是因为OPC和OPC UA协议使用的TCP层不一样，如下：
+OPC是基于DOM/COM上，应用层最顶层；OPC UA是基于TCP IP scoket 传输层</p>
+<p>OPC UA规范标准
+为了使 OPC UA 规范具有普遍的适应性，OPC 基金会使用了抽象的概念和术语形成 UA 规范，其中核心规范有 6 部分，访问类型规范由 6 部分组成。UA 服务器和客户端开发除了依赖于 UA 十三个规范的需求性指导以外，还需要合适的技术作为开发 UA服务器和客户端功能模块的基础。因此，具体的开发过程，需要分析相关规范，并结合具体的实践环境，确定合适的技术手段。</p>
+<p>Part1到Part13全部文档下载链接：下载链接</p>
+<p>OPC UA基础
+OPC UA 规范实质上是个抽象的分层架构，层与层之间是紧密联系,OPC UA 由下图的不同层次构成，它的基础组件是传输机制和信息建模，从图中能清楚得到，规范中第6
+、7、8、9、11 部分是描述了数据机制，而规范中第 3、4、5 部分是说明信息建模。
+OPC UA 在传输机制方面超越了传统的 OPC规范，它为企业内部网通信定义了二进制TCP,同时为防火墙友好的互联网通信定义了映射，接受如Web服务，XML、HTTP
+等的互联网标准的通信。OPC UA 对传统 OPC 规范的最大创新是信息建模。</p>
+<p>OPC UA 规范划分为不同层次，目的是为了把核心设计从底层运算处理和传输网络中分离开来，这能使在不改变底层设计的情况下，运用最新技术，这些底层设计主要定
+义了传输的通信协议，对数据的解编码，和各种数据类型定义等信息。在这些核心服务与数据类型框架下，未来人们能根据实践需要添加更多功能。这样，能使 OPC UA 更具有生命力。</p>
+<p>OPC UA 软件层
+OPC UA使用类似经典OPC的客户端/服务器概念。一个希望对其他应用暴露自己的信息的应用程序被称为UA服务器。而一个想要使用其他应用程序的信息的应用程序被称为UA客户端。但是,期望与经典OPC相比,更多的应用是在一个应用程序中包含UA服务器和UA客户端。其中一个原因是,越来越多的UA服务器将被直接集成在设备中,同时实现一个UA客户端使设备到设备的通信变得可行。另一个原因是, OPC UA用作配置接口, UA客户端同时也是一个可以通过OPC UA进行配置的UA服务器。</p>
+<p>一个典型的OPC UA的应用是由上图所示的三个软件层次组成的。整个完整的软件栈可以使用C/C ++、.NET或Java实现。OPC UA不限定只使用这些编程语言和开发平台,但目前只有这些环境下的OPC基金会的UA栈的实现可以交付使用。一个OPC UA应用程序是一个要公开或使用OPC UA数据的系统。它包含该应用程指定的功能,以及通过使用OPC UA栈和OPC UA 的软件来发工具包(SDK), 从该功能到OPC UA的映射。</p>
+<p>在网络环境中基于 SDK 构建 UA 应用程序之间的交互。下图中能看出，SDK 总是在协议栈之上，UA 服务器和 UA 客户端都在 SDK 之上开发的。</p>
+<p>各种开源OPC UA实现工具代码,SDK，开源代码等：链接</p>
+<p>OPC UA 学习内容
+如果想要了解学习OPC UA，可以根据自身需求，参照下表，学习对应的内容。</p>
+<p>参考：《OPC 统一架构》、OPC UA信息模型及其应用—江城、
+————————————————
+版权声明：本文为CSDN博主「Kunaly」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_33406883/article/details/106261867</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.sections"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.467223ff.min.js"></script>
+      
+    
+  </body>
+</html>
